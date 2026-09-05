@@ -1,0 +1,1 @@
+import type {MetadataRoute} from 'next';export default function sitemap():MetadataRoute.Sitemap{const base=process.env.NEXT_PUBLIC_SITE_URL||'http://localhost:3000';return [{url:base},{url:`${base}/properties`},{url:`${base}/buy`},{url:`${base}/rent`},{url:`${base}/projects`},{url:`${base}/about`},{url:`${base}/contact`},{url:`${base}/sell`}]} 

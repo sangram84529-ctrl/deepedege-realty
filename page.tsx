@@ -1,0 +1,1 @@
+'use client';import {useRouter} from 'next/navigation';import PropertyForm from '@/components/PropertyForm';export default function New(){const r=useRouter();return <PropertyForm onSaved={()=>r.push('/admin/properties')}/>}

@@ -1,0 +1,3 @@
+import './globals.css';import Header from '@/components/Header';import Footer from '@/components/Footer';import type {Metadata} from 'next';
+export const metadata:Metadata={title:{default:'DeepEdge Realty | Find a Place That Feels Like Home',template:'%s | DeepEdge Realty'},description:'Premium real estate discovery, buying, renting and property advisory in Mumbai and beyond.',openGraph:{title:'DeepEdge Realty',description:'Find a place that feels like home.'}};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><Header/><main>{children}</main><Footer/></body></html>}
